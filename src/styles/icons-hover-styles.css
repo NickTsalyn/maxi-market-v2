@@ -1,0 +1,14 @@
+button:hover:enabled .icon-favourite-white path,
+button:hover:enabled .icon-account path {
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  fill: black;
+}
+
+button:hover:enabled .icon-arrow path {
+  transition-property: fill;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  stroke: black;
+}

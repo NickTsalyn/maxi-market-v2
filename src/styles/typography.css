@@ -1,0 +1,75 @@
+.header-1 {
+  @apply text-2xl;
+  @apply font-semibold;
+  @apply leading-[1.2];
+}
+
+@screen xl {
+  .header-1 {
+    @apply text-[2.5rem];
+    @apply font-semibold;
+    @apply leading-[1.2];
+  }
+}
+
+.header-2 {
+  @apply text-2xl;
+  @apply font-semibold;
+  @apply leading-[1.2];
+}
+
+.header-3 {
+  @apply text-2xl;
+  @apply font-semibold;
+  @apply leading-[1.2];
+}
+
+.subtitle-1 {
+  @apply text-lg;
+  @apply font-semibold;
+  @apply leading-normal;
+}
+
+.subtitle-2 {
+  @apply text-base;
+  @apply font-semibold;
+  @apply leading-normal;
+}
+
+.body-1 {
+  @apply text-sm;
+  @apply font-light;
+  @apply leading-normal;
+}
+
+@screen md {
+  .body-1 {
+    @apply text-base;
+    @apply font-normal;
+    @apply leading-normal;
+  }
+}
+
+.body-2 {
+  @apply text-sm;
+  @apply font-light;
+  @apply leading-normal;
+}
+
+.button-typography {
+  @apply text-base;
+  @apply font-semibold;
+  @apply leading-normal;
+}
+
+.tab-typography {
+  @apply text-xs;
+  @apply font-light;
+  @apply leading-normal;
+}
+
+.link-typography,
+.caption-typography {
+  @apply text-base;
+  @apply font-normal;
+}
