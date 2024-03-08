@@ -1,5 +1,6 @@
 import { useSearchParams } from 'next/navigation';
 import FormAuth from './FormAuth';
+import FormRegister from './FormRegister';
 
 export default function Modal() {
   const searchParams = useSearchParams();
@@ -12,7 +13,7 @@ export default function Modal() {
       modalFormComponent = <FormAuth />;
       break;
     case 'register':
-      modalFormComponent = 'form register';
+      modalFormComponent = <FormRegister/>;
     default:
       break;
   }

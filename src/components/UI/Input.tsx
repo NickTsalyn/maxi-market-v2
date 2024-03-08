@@ -7,6 +7,9 @@ type Props = {
   required?: boolean;
   type: 'text' | 'email' | 'password' | 'tel';
   style: 'form' | 'search' | 'subscribe';
+  value?: string;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  ref?: any
 };
 
 export default function Input(props: Props) {
