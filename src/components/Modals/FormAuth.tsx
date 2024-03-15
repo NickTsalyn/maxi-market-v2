@@ -32,7 +32,7 @@ export default function FormAuth() {
 					<Input label="Ваш Email" placeholder="введіть Email" style="form" type="email" />
 					<Input label="Ваш Пароль" placeholder="введіть Пароль" style="form" type="password" />
 				</div>
-				<p className="body-1 mb-4 md:mb-8">Забули пароль?</p>
+				<p className="body-1 mb-4 md:mb-8 cursor-pointer" onClick={() => router.push("/?modalContent=forgot")}>Забули пароль?</p>
 				<div className="mb-4 md:mb-8">
 					<Button style="wide-primary" type="submit">
 						Увійти

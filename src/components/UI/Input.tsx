@@ -10,6 +10,7 @@ type Props = {
   value?: string;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   ref?: any
+
 };
 
 export default function Input(props: Props) {

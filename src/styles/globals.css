@@ -3,3 +3,8 @@
 @tailwind utilities;
 @import './typography.css';
 @import './icons-hover-styles.css';
+
+
+.react-international-phone-input-container .react-international-phone-input {
+    height: 53px 
+}

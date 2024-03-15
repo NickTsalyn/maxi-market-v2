@@ -82,7 +82,7 @@ export function IconBasket() {
 
 export function IconArrowGrey() {
   return (
-    <svg className='icon-arrow' width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+    <svg className='icon-arrow' width='8' height='16' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
       <path
         d='M1.48999 11L6.48999 6L1.48999 1'
         stroke='#B3B3B3'
@@ -93,6 +93,7 @@ export function IconArrowGrey() {
     </svg>
   );
 }
+
 
 export function IconClose() {
   return (
