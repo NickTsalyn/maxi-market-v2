@@ -9,3 +9,5 @@ export interface ProductCard {
   description: string;
   price: string;
 }
+
+
