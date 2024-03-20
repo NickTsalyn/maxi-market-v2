@@ -19,7 +19,7 @@ export default function CardSeller(props: Props) {
 				<p className="body-2 xl:text-base">100% виконаних замовлень</p>
 			</div>
 			<p className="body-2 xl:text-base">Зареєстрований на сайті з жовтень 2020</p>
-			<div className="flex flex-row items-center mr-1">
+			<div className="flex flex-row items-center justify-between xl:justify-normal xl:mr-1">
 				<p className="body-2 text-secondary xl:text-base">Показати інші пропозиції продавця</p>
 				<Button style="favourite" type="button">
 					<IconArrowBlue />

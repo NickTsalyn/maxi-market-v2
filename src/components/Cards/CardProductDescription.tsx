@@ -16,7 +16,7 @@ export default function CardProductDescription(props: Props) {
 			<h3 className="header-3">
 				1500 <span className="text-base ">грн</span>
 			</h3>
-			<Button style="wide-primary" type="submit">Купити</Button>
+			<Button style="wide-primary" type="button">Купити</Button>
 		</div>
 	);
 }
