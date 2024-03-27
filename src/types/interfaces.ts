@@ -10,4 +10,9 @@ export interface ProductCard {
   price: string;
 }
 
-
+export interface ProductCardFilter {
+  name: string;
+  imgUrl: string;
+  description: string;
+  price: string;
+}
