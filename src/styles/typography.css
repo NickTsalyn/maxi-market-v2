@@ -13,7 +13,7 @@
 }
 
 .header-2 {
-  @apply text-2xl;
+  @apply text-[28px];
   @apply font-semibold;
   @apply leading-[1.2];
 }
@@ -52,7 +52,7 @@
 
 .body-2 {
   @apply text-sm;
-  @apply font-light;
+  @apply font-normal;
   @apply leading-normal;
 }
 

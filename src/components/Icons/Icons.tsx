@@ -94,6 +94,20 @@ export function IconArrowGrey() {
   );
 }
 
+export function IconArrowBlue() {
+  return (
+    <svg className='icon-arrow' width='8' height='16' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+      <path
+        d='M1.48999 11L6.48999 6L1.48999 1'
+        stroke='#0058F6'
+        strokeWidth='1.5'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+      />
+    </svg>
+  );
+}
+
 
 export function IconClose() {
   return (

@@ -36,6 +36,7 @@ const config: Config = {
         primary: '#FFB52E',
         secondary: '#0058F6',
         tertiary: '#282828',
+        quaternary: '#373737',
         danger: '#FF0404',
         success: '#04D800',
       },

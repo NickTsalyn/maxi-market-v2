@@ -19,7 +19,7 @@ export default function CardProduct(props: ProductCard) {
         <p className='body-2 mb-6'>{props.description}</p>
         <div>
           <h4 className='subtitle-2 mb-4'>{props.price} грн</h4>
-          <Button style='primary-card' type='button'>
+          <Button style='primary-card'  type='button'>
             Детальніше
           </Button>
         </div>
