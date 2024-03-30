@@ -36,7 +36,7 @@ export default function FormRegister() {
 				<p className="body-1 mb-6 text-center md:mb-8">Заповніть всі поля нижче, щоб створити свій профіль</p>
 				<div className="flex flex-col gap-2 mb-4 md:gap-2 md:mb-8 xl:mb-6">
 					<Input label="Ваше ім'я" placeholder="введіть ім'я" style="form" type="text" />
-					<Input label="Ваше прізвище" placeholder="введіть прізвище" style="form" type="text" />
+					{/* <Input label="Ваше прізвище" placeholder="введіть прізвище" style="form" type="text" /> */}
 					<label className=" text-sm text-tertiary">
 						Номер телефону
 						<PhoneInput
@@ -53,7 +53,7 @@ export default function FormRegister() {
 
 					<Input label="Ваш Email" placeholder="введіть Email" style="form" type="email" />
 					<Input label="Ваш Пароль" placeholder="введіть Пароль" style="form" type="password" />
-					<Input label="Повторіть пароль" placeholder="введіть Пароль" style="form" type="password" />
+					{/* <Input label="Повторіть пароль" placeholder="введіть Пароль" style="form" type="password" /> */}
 				</div>
 				<p className=" text-sm mb-4 md:mb-8">
 					Реєструючись, ви погоджуєтеся з{" "}

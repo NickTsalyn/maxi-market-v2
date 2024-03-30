@@ -22,7 +22,7 @@ export default function CardSeller(props: Props) {
 			<div className="flex flex-row items-center justify-between xl:justify-normal xl:mr-1">
 				<p className="body-2 text-secondary xl:text-base">Показати інші пропозиції продавця</p>
 				<Button style="favourite" type="button">
-					<IconArrowBlue />
+					<IconArrowBlue/>
 				</Button>
 			</div>
 			<Button style="wide-secondary" type="button">Показати номер</Button>
