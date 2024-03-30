@@ -1,9 +1,9 @@
-export type NavLink = {//тип кожного посилання
+export type NavLink = {
   href: string;
   title: string;
 };
 
-export type NavBar = {// тип кожного блоку
+export type NavBar = {
   heading: string;
   links: NavLink[];
 };
