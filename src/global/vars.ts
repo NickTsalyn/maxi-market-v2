@@ -165,33 +165,40 @@ export const MOCK_FILTER_CARDS: ProductCardFilter[] = [
 		name: 'Рюкзак "Експлорер"',
 		price: "1500",
 	},
-  {
-		description: 'Набір гантелі 2шт вагою по 16кг ідеально підходить для тих, хто прагне зміцнити своє тіло.',
+	{
+		description: "Набір гантелі 2шт вагою по 16кг ідеально підходить для тих, хто прагне зміцнити своє тіло.",
 		imgUrl:
 			"https://s3-alpha-sig.figma.com/img/f0f1/6f9b/e14591728e01e84ae266b5941cf6f1e3?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UsiXuhYik2zTeR8TEa6WKKXuUZdCX1cF-A8djGxGAIMkk0Lzvb3-~be2AX67zKGEi73GKO2Dqxfs5mBkVLVZuO7Q5JjsJ92lU7WzioVYii1Uv0cievOp--CzI48HXvDu0AHEnYetvoSMIjOUMypNWFVZ1uJRsVtkxnPfELT7Eu3VqvuZZjwNt5IF1clTxC7JxNiuH~MhjzhUJx9x55vo3ee~b0Qv22tJljfFnmByzJsl92~S9qXvmYSZ3pgQn6OPtYEBfC3Orsn6rSXnO9drcsZmzpsWp8Oa7qDTJMfIYcocwl7Of7gD3ZxrjSJ1axFWYfkHiVYtcD5Rcay42H-GKw__",
-		name: 'Комплект гантелей,  2шт',
+		name: "Комплект гантелей,  2шт",
 		price: "800",
 	},
-  {
-		description: 'Бігова доріжка Torneo Inita T-150 відноситься до класу суперкомпактних бігових доріжок, яка в складеному ...',
+	{
+		description:
+			"Бігова доріжка Torneo Inita T-150 відноситься до класу суперкомпактних бігових доріжок, яка в складеному ...",
 		imgUrl:
 			"https://s3-alpha-sig.figma.com/img/8ca4/9868/ea7821e459c5d8035e8d514e0e16d4f8?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=llZQFDgTd8d2TsSCXvt6rtM65yxnHvzIdB5Lw386Q1Sd5E2J2iIsmQWjtWs~p0LiM~2BTJEDV9C0M7iHq3pfPBsF7XpE3lrE-Kzrm8aG9xNfrW8zGiiiZ5D-K0KpIovajuGdaXkaBGuJF49L-9P5mBVlbS1OBdfa5V3D88oyASX-M307XEK~y5phYv3qexcXC12ioJqbdUVc~KOpnrUGyyqkw4Zz7~YP6MsPGqN02afSJQ9JjZGtR2U25e9wsHqzQdnP9z3FtQ3aiEg82xcbl55KFn7~QLWGuyMQHGluv1JoylzZ6rI0CV5vZG21W7LtnbXIZ12KHhX1q96U1Gelgw__",
-		name: 'Бігова доріжк а Torneo Inita T-150  ',
+		name: "Бігова доріжк а Torneo Inita T-150  ",
 		price: "10500",
 	},
-  {
-		description: 'Огляд Велосипед CrossBike 26`` Spark D-Steel 2023 Рама 13`` neon yellow. Технічні параметри:',
+	{
+		description: "Огляд Велосипед CrossBike 26`` Spark D-Steel 2023 Рама 13`` neon yellow. Технічні параметри:",
 		imgUrl:
 			"https://s3-alpha-sig.figma.com/img/d112/27a9/b239c874db0523a73ca65303f55a3d61?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NAYfgAEy8eLSaR2YoQD4A7wSc9KFUm2vQpgo1MSXCpizo84-DLFNAoPJ0UtnIBQZSuYZLTw2n0H8R1ydzYkc5nWQCIj8feeA5VeA5U2z0gNdFI3cBVtMYwi5vXsbG4GguzYiAhvEBG6CE0GGcP48Z8ckT0boSS~YaEeW-RpE-y5O2THWlNsht2pV75sMXoiDlQwpIen1YmNFMFo13CcO~Dh6XnU4J1GK7UDKKhYYv0WAxmO3RI8p2lSthE3ZOWXCyBAlxsHPqR4zmQ-5KMqmENDFkRP5AZINTwY46t6z0yKwftzl5rtKh3ZQPP5VVO7eU3zMxxSfC0nD42tICsWcng__",
-		name: 'Велосипед CrossBike 26',
+		name: "Велосипед CrossBike 26",
 		price: "15500",
 	},
-  {
-		description: 'Naturehike P-Series 2 виконано в ультралегкому стилі. Для цього виробник використовує одні з ...',
+	{
+		description: "Naturehike P-Series 2 виконано в ультралегкому стилі. Для цього виробник використовує одні з ...",
 		imgUrl:
 			"https://s3-alpha-sig.figma.com/img/9b5a/9da7/84a641b2102ea2a631969ac80ebaa156?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VukFWwij2CpQgOH~ajpdwjsMIK76tIh6b~ENxUq0nK5iHFTMWODHec4PlC5k6Yycss7~BcgyNAcT8jTk59PBwgb6bimnTSIvfh1l~JkSsiUtTOblKTj-QaXSvVRs2EP4T8H1LhCZsk~D7-d6NvG~fli0kdLfRN~L2ScanpibSoKOTmpP5awlvupwxSoKraSqFnayyP1NU280WeFuhVkpXUIH1qIGbLsbomyWmen~ZeBlcKD-yZGEBaoQBXifoKk7OL7nkmJQsIPV~poNJlh0lrH8e254ybPX76VAnrCqCkC00vnfXJF8dwk-8diAKLV-alFr85fnR9x0Kt~PXBX-4w__",
-		name: 'Палатка  Naturehike P-Series 2',
+		name: "Палатка  Naturehike P-Series 2",
 		price: "3490",
+	},
+	{
+		description: "Ліхтар виконаний у міцному пластиковому корпусі типу АВС. 1 яскравий діод LED із дальністю ",
+		imgUrl:
+			"https://s3-alpha-sig.figma.com/img/01dd/1b9e/e21b4ec1d583fc3d1e97cf50a5cc72c2?Expires=1712534400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=INsYZkajj3cB5sO8E~UsRK~xcVge6-lm4cmPBSLEeFLKLU1REqYSBF-D5-kbdzY6j9u7kncw3rPqQgdolFwYSmOdmzPumWHLX4U4-f~0akEuy7j7ViKwaZMxpPV~a8x-eRgMYBIQGY6fPBrGG21GIgJ4dBbxYgF1ANWDbgNWNREAdfelhDbuZDYyMkys8sckWgTPAaqPmBHxcndixlwyGytCoPyoP53aJ5yfvinm4ak8D0e68CUr07VSSQqinTbLK2xnM1FO-7aIaHWNZXPit0tWms9EYDGKGzq0q8Ye00l2UgppkA~bbM3evyMIsfr2E0tKKpp6cuRGW45L0EqCTg__",
+		name: "Акумуляторний ліхтар ",
+		price: "180",
 	}
-
 ];
