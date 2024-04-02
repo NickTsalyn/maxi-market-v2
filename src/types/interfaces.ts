@@ -16,3 +16,9 @@ export interface ProductCardFilter {
   description: string;
   price: string;
 }
+
+
+export interface Auth {
+  email: string;
+  password: string;
+}

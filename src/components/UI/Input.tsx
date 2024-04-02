@@ -5,6 +5,7 @@ type Props = {
   label?: string;
   placeholder?: string;
   required?: boolean;
+  name?: string;
   type: 'text' | 'email' | 'password' | 'tel';
   style: 'form' | 'search' | 'subscribe';
   value?: string;
@@ -39,6 +40,7 @@ export default function Input(props: Props) {
       <input
         className='w-full outline-none bg-transparent h-[53px] p-4 border-2 border-grey-stroke rounded focus:border-tertiary focus:placeholder:text-grey-stroke invalid:border-danger invalid:placeholder:text-danger'
         type={props.type}
+        name={props.name}
         placeholder={props.placeholder}
         required={props.required}
       />
