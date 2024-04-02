@@ -1,17 +1,14 @@
 import React from "react";
-import { ProductCardFilter } from "@/types/interfaces";
 import Image from "next/image";
+import { MOCK_FILTER_CARDS } from "@/global/vars";
 
-type Props = {
-	filterCards: ProductCardFilter[];
-};
 
-export const CardFilter = (props: Props) => {
+export const CardFilter = () => {
 	return (
 		<ul>
-			{props.filterCards.map((card, i) => (
+			{MOCK_FILTER_CARDS.map((card, i) => (
 				<li key={i}>
-					<Image src={card.imgUrl} alt="card" />
+					<Image src={card.imgUrl} alt="card" width={300} height={300}/>
 					<h3>{card.name}</h3>
 					<p>{card.description}</p>
 					<p>{card.price}</p>
