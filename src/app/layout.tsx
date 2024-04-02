@@ -1,11 +1,12 @@
-import ModalWindow from "@/components/Modals/ModalWindow";
-import Footer from "@/layouts/Footer";
-import Header from "@/layouts/Header";
-import PageWrapper from "@/layouts/PageWrapper";
-import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
-import { Suspense } from "react";
-import "../styles/globals.css";
+import ModalWindow from '@/components/Modals/ModalWindow';
+import Footer from '@/layouts/Footer';
+import Header from '@/layouts/Header';
+import PageWrapper from '@/layouts/PageWrapper';
+import type { Metadata } from 'next';
+import { Montserrat } from 'next/font/google';
+import { Suspense } from 'react';
+import '../styles/globals.css';
+import ReduxProvider from '@/redux/ReduxProvider';
 
 const montserrat = Montserrat({ subsets: ["cyrillic"] });
 
@@ -20,8 +21,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html className="h-full" lang="ua">
-      <body className={montserrat.className + " h-full"}>
+   
+    <html className='h-full' lang='ua'>
+      <body className={montserrat.className + ' h-full'}>
+      <ReduxProvider>
         <PageWrapper>
           <Header />
           <main className="flex-auto">{children}</main>
@@ -32,7 +35,9 @@ export default function RootLayout({
             <ModalWindow />
           </div>
         </Suspense>
+        </ReduxProvider>
       </body>
     </html>
+   
   );
 }
