@@ -1,15 +1,12 @@
-import { CardFilter } from "@/components/Cards/CardFilter";
-import React from "react";
+import PriceFormComp from "@/components/Form/PriceForm";
 
 export interface PageProps {}
 
 export default function Page({}: PageProps) {
+
 	return (
 		<div>
-			<CardFilter />
+			{/* <PriceFormComp /> */}
 		</div>
 	);
 }
-
-
-

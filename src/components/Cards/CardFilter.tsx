@@ -1,5 +1,4 @@
 import React from "react";
-// import { ProductCardFilter } from "@/types/interfaces";
 import { MOCK_FILTER_CARDS } from "@/global/vars";
 import Image from "next/image";
 import Button from "../UI/Button";
