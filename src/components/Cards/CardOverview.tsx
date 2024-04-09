@@ -8,7 +8,7 @@ export default function CardOverview() {
   ];
   return (
     <div className="border-b border-grey-stroke">
-      <h2 className="pb-4 header-3 text-tertiary xl:header-2">Опис товару</h2>
+      <h2 className="pb-4 header-3 text-tertiary ">Опис товару</h2>
       <ul className="mb-4 ">
         {options.map((option, i) => (
           <li
