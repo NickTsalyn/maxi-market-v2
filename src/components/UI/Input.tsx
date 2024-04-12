@@ -1,4 +1,6 @@
+'use client'
 import { IconSearch } from "../Icons/Icons";
+
 
 type Props = {
 	children?: React.ReactNode;
@@ -14,6 +16,8 @@ type Props = {
 };
 
 export default function Input(props: Props) {
+
+
 	if (props.style === "search") {
 		return (
 			<div className="body-2 flex gap-2 w-full bg-white text-tertiary bg-transparent px-4 border-2 border-grey-stroke rounded-l focus-within:border-tertiary">
@@ -58,6 +62,9 @@ export default function Input(props: Props) {
 				name={props.name}
 				placeholder={props.placeholder}
 				required={props.required}
+				onChange={props.onChange}
+				value={props.value !== undefined ? props.value : ''}
+				
 			/>
 			{props.required && <span className="tabs-typography text-danger">Помилка</span>}
 		</div>
