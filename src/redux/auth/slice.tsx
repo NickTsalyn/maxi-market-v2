@@ -2,8 +2,8 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { login, logout } from './operations';
 
 interface User {
-  name: string | null;
-  email: string | null;
+  login: string | null;
+  password: string | null;
  
 }
 
@@ -18,7 +18,7 @@ interface AuthState {
 }
 
 const initialState: AuthState = {
-  user: { name: null, email: null },
+  user: { login: null, password: null },
   token: null,
   isLoggedIn: false,
   isRefreshing: false,
@@ -59,7 +59,7 @@ const authSlice = createSlice({
       })
       .addCase(logout.fulfilled, (state) => {
         state.isLoading = false;
-        state.user = { name: null, email: null};
+        state.user = { login: null, password: null};
         state.token = null;
         state.isLoggedIn = false;
       })
