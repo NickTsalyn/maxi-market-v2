@@ -17,8 +17,12 @@ export interface ProductCardFilter {
   price: string;
 }
 
-
 export interface Auth {
   login: string;
   password: string;
+}
+
+export interface City {
+  AreaDescription: string;
+  Description: string;
 }
