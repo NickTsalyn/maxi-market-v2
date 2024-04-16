@@ -24,7 +24,7 @@ export default function BasicSelect(props: BasicSelectProps) {
   // console.log(open);
   return (
     <Box sx={{ minWidth: 120 }}>
-      <label className="block mb-2">{props.label}</label>
+      <label className="block mb-2 body-3">{props.label}</label>
       <FormControl
         fullWidth
         sx={{

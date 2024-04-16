@@ -40,9 +40,9 @@ export default function Input(props: Props) {
 	if (props.style === "add-form") {
 		return (
 			<div className="body-2 text-tertiary">
-			<label className="block mb-2">{props.label}</label>
+			<label className="block mb-2 body-3">{props.label}</label>
 			<input
-				className="w-full outline-none bg-grey-bg-1 h-[53px] p-4 border-2 border-grey-stroke rounded focus:border-tertiary focus:placeholder:text-grey-stroke invalid:border-danger invalid:placeholder:text-danger"
+				className="w-full outline-none bg-grey-bg-1 h-[53px] p-4 border-[1px] border-grey-stroke rounded focus:border-tertiary focus:placeholder:text-grey-stroke invalid:border-danger invalid:placeholder:text-danger"
 				type={props.type}
 				name={props.name}
 				placeholder={props.placeholder}

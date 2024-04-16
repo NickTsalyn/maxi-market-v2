@@ -23,6 +23,7 @@
   @apply font-semibold;
   @apply leading-[1.2];
 }
+
 @screen xl {
   .header-3 {
     @apply text-[28px];

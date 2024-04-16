@@ -45,7 +45,7 @@ export default function AdditionalInfoForm({
     <div className="py-3 px-2 md:p-6 flex flex-col justify-start items-start gap-8 bg-white shadow-middle">
       <h2 className="subtitle-1 text-tertiary">Додаткова інформація</h2>
       <div>
-        <p className="pb-2 body-3 text-tertiary">Ваш спосіб діяльності:</p>
+        <p className="mb-2 body-3 text-tertiary">Ваш спосіб діяльності:</p>
         <div className="flex flex-start gap-2">
           {activityGroup1.map((option) => (
             <RadioButton
@@ -59,7 +59,7 @@ export default function AdditionalInfoForm({
       </div>
 
       <div>
-        <p className="pb-2 body-3 text-tertiary">Стан товару:</p>
+        <p className="mb-2 body-3 text-tertiary">Стан товару:</p>
         <div className="flex flex-start gap-2 flex-wrap">
           {conditionGroup2.map((option) => (
             <RadioButton
