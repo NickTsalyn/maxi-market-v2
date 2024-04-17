@@ -23,11 +23,26 @@
   @apply font-semibold;
   @apply leading-[1.2];
 }
+@screen xl {
+  .header-3 {
+    @apply text-[28px];
+    /* @apply font-semibold;
+    @apply leading-[1.2]; */
+  }
+}
 
 .subtitle-1 {
   @apply text-lg;
   @apply font-semibold;
   @apply leading-normal;
+}
+
+@screen xl {
+  .subtitle-1 {
+    @apply text-[28px];
+    @apply font-semibold;
+    @apply leading-[1.2];
+  }
 }
 
 .subtitle-2 {
@@ -53,6 +68,12 @@
 .body-2 {
   @apply text-sm;
   @apply font-normal;
+  @apply leading-normal;
+}
+
+.body-3 {
+  @apply text-base;
+  @apply font-medium;
   @apply leading-normal;
 }
 
