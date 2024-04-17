@@ -21,7 +21,6 @@ export default function BasicSelect(props: BasicSelectProps) {
   const handleOpen = () => {
     setOpen(!open);
   };
-  // console.log(open);
   return (
     <Box sx={{ minWidth: 120 }}>
       <label className="block mb-2 body-3">{props.label}</label>

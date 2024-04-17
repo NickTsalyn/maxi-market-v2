@@ -1,8 +1,8 @@
 "use client";
 
-import AdditionalInfoForm from "@/components/Form/AdditionaIInfoForm";
+import AdditionalInfo from "@/components/Form/AdditionaIInfo";
 import PriceFormComp from "@/components/Form/PriceForm";
-import ContactInfoForm from "@/components/Form/ContactInfoForm";
+import ContactInfo from "@/components/Form/ContactInfo";
 
 export interface PageProps {}
 
@@ -17,7 +17,7 @@ export default function Page({}: PageProps) {
       <h1 className="header-1  text-tertiary">Створити оголошення</h1>
       <div className="flex flex-col gap-4">
         {/* <PriceFormComp /> */}
-        <AdditionalInfoForm onDataChange={handleDataChange} />
+        <AdditionalInfo onDataChange={handleDataChange} />
         <ContactInfoForm />
       </div>
     </>
