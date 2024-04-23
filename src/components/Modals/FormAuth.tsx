@@ -8,7 +8,18 @@
 	
 	import { login } from '@/redux/auth/operations';
 import { useAppDispatch } from '@/redux/store';
+import * as yup from 'yup';
 
+export const validationSchema = yup.object().shape({
+    login: yup.string()
+        .required('Логін є обов\'язковим полем')
+        .matches(/^[^\s@]+@[^\s@]+\.[^\s@]+$/, 'Логін має бути у форматі електронної пошти'),
+
+        
+    password: yup.string()
+        .required('Пароль є обов\'язковим полем')
+    
+});
 
 
 
@@ -31,10 +42,17 @@ import { useAppDispatch } from '@/redux/store';
 			
 				<Formik<Auth>
 				initialValues={{
-					email: '',
+					login: '',
 					password: '',
 				}}
-				onSubmit={handleSumbit}
+				// validationSchema={validationSchema}
+				onSubmit={(values, ) => { 
+				
+					console.log(values)
+					dispatch(login(values))
+					router.push("/");
+					
+				}}
 				>
 				{({ isSubmitting }) => (
 					<Form>
@@ -50,12 +68,12 @@ import { useAppDispatch } from '@/redux/store';
 						</p>
 						<div className="flex flex-col gap-2 mb-4 md:gap-8 md:mb-8">
 						<Field
-							name="email"
+							name="login"
 							type="email"
 							label="Ваш Email"
 							placeholder="введіть Email"
 							style='form'
-							component={Input}
+							as={Input}
 						/>
 						<Field
 							name="password"
@@ -63,7 +81,7 @@ import { useAppDispatch } from '@/redux/store';
 							label="Ваш Пароль"
 							placeholder="введіть Пароль"
 							style='form' 
-							component={Input}
+							as={Input}
 						/>
 						</div>
 						<p

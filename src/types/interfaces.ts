@@ -19,6 +19,6 @@ export interface ProductCardFilter {
 
 
 export interface Auth {
-  email: string;
+  login: string;
   password: string;
 }

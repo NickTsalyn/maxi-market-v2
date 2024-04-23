@@ -1,10 +1,10 @@
-import { createSlice, PayloadAction } from '@reduxjs/toolkit';
-import { login, logout } from './operations';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { login, logout, register } from "./operations";
 
 interface User {
-  name: string | null;
-  email: string | null;
  
+  login: string | null;
+  password: string | null;
 }
 
 interface AuthState {
@@ -18,7 +18,7 @@ interface AuthState {
 }
 
 const initialState: AuthState = {
-  user: { name: null, email: null },
+  user: {  login: null, password: null },
   token: null,
   isLoggedIn: false,
   isRefreshing: false,
@@ -28,7 +28,7 @@ const initialState: AuthState = {
 };
 
 const authSlice = createSlice({
-  name: 'auth',
+  name: "auth",
   initialState,
   reducers: {},
   extraReducers: (builder) => {
@@ -38,17 +38,19 @@ const authSlice = createSlice({
         state.isError = false;
         state.errorMessage = null;
       })
-      .addCase(login.fulfilled, (state, action: PayloadAction<{ user: User; token: string }>) => {
-        state.user = action.payload.user;
-        state.token = action.payload.token;
-        state.isLoading = false;
-        state.isLoggedIn = true;
-      })
+      .addCase(
+        login.fulfilled,
+        (state, action: PayloadAction<{ user: User; token: string }>) => {
+          state.user = action.payload.user;
+          state.token = action.payload.token;
+          state.isLoading = false;
+          state.isLoggedIn = true;
+        }
+      )
       .addCase(login.rejected, (state, action) => {
- 
         if (action.payload) {
           state.isLoading = false;
-          state.errorMessage = action.payload.toString();;
+          state.errorMessage = action.payload.toString();
           state.isError = true;
         }
       })
@@ -59,13 +61,31 @@ const authSlice = createSlice({
       })
       .addCase(logout.fulfilled, (state) => {
         state.isLoading = false;
-        state.user = { name: null, email: null};
+        state.user = {  login: null, password: null };
         state.token = null;
         state.isLoggedIn = false;
       })
       .addCase(logout.rejected, (state) => {
         state.isError = true;
-      });
+      })
+      .addCase(register.pending, (state) => {
+        state.isLoading = true;
+        state.isError = false;
+        state.errorMessage = null;
+      })
+      .addCase(register.fulfilled, (state,action: PayloadAction<{ user: User; token: string }>) => {
+        state.user = action.payload.user;
+        state.token = action.payload.token;
+        state.isLoading = false;
+        state.isLoggedIn = true;
+      })
+      .addCase(register.rejected, (state, action) => {
+        if (action.payload) {
+          state.isLoading = false;
+          state.errorMessage = action.payload.toString();
+          state.isError = true;
+        }
+      })
   },
 });
 
