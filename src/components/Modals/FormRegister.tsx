@@ -7,6 +7,7 @@ import Input from "../UI/Input";
 import { ChangeEvent, useState } from "react";
 import { PhoneInput } from "react-international-phone";
 import "react-international-phone/style.css";
+import { useDispatch } from "react-redux";
 
 interface PhoneProps {
 	label: string;
@@ -15,6 +16,7 @@ interface PhoneProps {
 export default function FormRegister() {
 	const [phone, setPhone] = useState("");
 	const router = useRouter();
+	const dispatch = useDispatch;
 
 	const handleSumbit = (e: React.FormEvent) => {
 		e.preventDefault();
