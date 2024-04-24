@@ -22,8 +22,6 @@ export const validationSchema = yup.object().shape({
 });
 
 
-
-
 	export default function FormAuth() {
 		const router = useRouter();
 		const dispatch = useAppDispatch();
@@ -110,6 +108,7 @@ export const validationSchema = yup.object().shape({
 				</Formik>
 			);
 			}
+		
 			// <form onSubmit={handleSumbit}>
 			// 	<div className="flex justify-end w-full h-10 md:mb-6">
 			// 		<div onClick={handleClose} className="cursor-pointer">
@@ -141,3 +140,4 @@ export const validationSchema = yup.object().shape({
 			// </form>
 	// 	);
 	// }
+	

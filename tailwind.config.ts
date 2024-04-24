@@ -42,7 +42,9 @@ const config: Config = {
       },
       boxShadow: {
         small: '0px 2px 4px 0px #28293D1A',
+        middle: '0px 4px 19px 0px rgba(34, 34, 34, 0.07)',
         large: '0px 8px 16px 0px #60617033',
+        
       },
       variants: {
         fill: ['hover', 'focus'],

@@ -1,5 +1,6 @@
-import { useField } from "formik";
+'use client'
 import { IconSearch } from "../Icons/Icons";
+
 
 type Props = {
 	children?: React.ReactNode;
