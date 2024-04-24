@@ -2,10 +2,22 @@
 
 import { PhoneInput } from "react-international-phone";
 import Input from "../UI/Input";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { CreateAdvertValues } from "@/types/types";
 
-export default function ContactInfoForm() {
+interface ContactInfoProps {
+  onDataChange: (data: CreateAdvertValues) => void;
+}
+
+export default function ContactInfoForm({ onDataChange }: ContactInfoProps) {
+  const [author, setAuthor] = useState("");
   const [phone, setPhone] = useState("");
+  const [adress, setAdress] = useState("");
+
+  useEffect(() => {
+    onDataChange({ author, phone, adress });
+  }, [author, phone, adress, onDataChange]);
+
   return (
     <div className="py-3 px-2 md:p-6 flex flex-col justify-start items-start gap-8 bg-white shadow-middle">
       <h2 className="subtitle-1 text-tertiary">Контактна інформація</h2>
@@ -15,16 +27,13 @@ export default function ContactInfoForm() {
           type="text"
           label="Вкажіть Ваше ім'я:"
           placeholder="Ваше ім'я"
+          value={author}
+          onChange={(e) => setAuthor(e.target.value)}
         />
       </div>
 
       <div className="w-full xl:w-[467px] body-3">
-        {/* <Input
-          style="add-form"
-          type="tel"
-          label="Вкажіть Ваш номер телефону:"
-        /> */}
-        <label className=" text-tertiary">
+        <label className="text-tertiary">
           Номер телефону
           <PhoneInput
             defaultCountry="ua"
@@ -38,14 +47,18 @@ export default function ContactInfoForm() {
           />
         </label>
       </div>
-
       <div className="w-full xl:w-[467px]">
         <Input
           style="add-form"
           type="text"
           label="Оберіть місцезнаходження товару:"
+          placeholder="Область, місто/село, район "
+          value={adress}
+          onChange={(e) => setAdress(e.target.value)}
         />
       </div>
     </div>
   );
 }
+
+

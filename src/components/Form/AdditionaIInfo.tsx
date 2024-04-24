@@ -4,19 +4,20 @@ import React, { useState } from "react";
 import { RadioButton } from "../UI/RadioButton";
 import BasicSelect from "../UI/Select";
 import { MOCK_PRODUCT_COLORS } from "@/global/vars";
+import { CreateAdvertValues } from "@/types/types";
 
-type Values = {
-  activity: string;
-  condition: string;
-  color: string;
-};
+// type Values = {
+//   activity: string;
+//   condition: string;
+//   color: string;
+// };
 
 interface AdditionalInfoProps {
-  onDataChange: (data: Values) => void;
+  onDataChange: (data: CreateAdvertValues) => void;
 }
 
 export default function AdditionalInfo({ onDataChange }: AdditionalInfoProps) {
-  const [formData, setFormData] = useState<Values>({
+  const [formData, setFormData] = useState<CreateAdvertValues>({
     activity: "Приватно",
     condition: "Новий",
     color: "чорний",
@@ -33,7 +34,7 @@ export default function AdditionalInfo({ onDataChange }: AdditionalInfoProps) {
   const handleChange = (name: string, value: string) => {
     const updatedFormData = {
       ...formData,
-      [name]: value,
+      [name]: value
     };
     setFormData(updatedFormData);
     onDataChange(updatedFormData);
@@ -72,7 +73,7 @@ export default function AdditionalInfo({ onDataChange }: AdditionalInfoProps) {
 
       <div className="w-full xl:w-[467px]">
         <BasicSelect
-          value={formData.color}
+          value={formData.color as string}
           label="Колір товару:"
           onChange={(e) => handleChange("color", e.target.value as string)}
           items={MOCK_PRODUCT_COLORS}
