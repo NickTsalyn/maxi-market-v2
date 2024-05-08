@@ -1,7 +1,7 @@
 "use client";
 
 import AdditionalInfo from "@/components/Form/AdditionaIInfo";
-import PriceFormComp from "@/components/Form/PriceForm";
+// import PriceFormComp from "@/components/Form/PriceForm";
 import ContactInfoForm from "@/components/Form/ContactInfoForm";
 
 export interface PageProps {}

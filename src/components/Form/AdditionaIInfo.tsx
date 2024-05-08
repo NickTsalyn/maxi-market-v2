@@ -6,12 +6,6 @@ import BasicSelect from "../UI/Select";
 import { MOCK_PRODUCT_COLORS } from "@/global/vars";
 import { CreateAdvertValues } from "@/types/types";
 
-// type Values = {
-//   activity: string;
-//   condition: string;
-//   color: string;
-// };
-
 interface AdditionalInfoProps {
   onDataChange: (data: CreateAdvertValues) => void;
 }
@@ -34,7 +28,7 @@ export default function AdditionalInfo({ onDataChange }: AdditionalInfoProps) {
   const handleChange = (name: string, value: string) => {
     const updatedFormData = {
       ...formData,
-      [name]: value
+      [name]: value,
     };
     setFormData(updatedFormData);
     onDataChange(updatedFormData);
